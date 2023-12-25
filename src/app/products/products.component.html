@@ -1,0 +1,50 @@
+<div class="products">
+  <div class="filterdiv">
+    <div class="filtname"><p>filter</p></div>
+
+    <div class="filtrange">
+      <h3>spiciness:(between 0-4) : <output id="value"></output></h3>
+      <input type="range" id="spice" min="0" max="4.0" />
+    </div>
+
+    <div class="filtercheckbox">
+      <label class="filetcheckboxlabel"
+        >No Nuts <input type="checkbox"
+      /></label>
+
+      <label class="filetcheckboxlabel"
+        >Vegetarian only <input type="checkbox"
+      /></label>
+
+      
+    </div>
+    <button class="resetbtn">reset</button>
+  </div>
+
+  <div class="food">
+    <div *ngFor="let value of products" class="salads">
+      <div class="Saladsinfo">
+        <img [src]="value.image" alt="" />
+        <div class="Saladsinfoin">
+          <h1>{{ value.name }}</h1>
+          <h2>{{ value.spiciness }}</h2>
+          <div class="nutsveg">
+            <h2>Nuts</h2>
+            <h2>Vegetarian</h2>
+          </div>
+
+          <div class="pricebtn">
+            <button class="btn-53">
+              <div class="original">
+                <h1>{{ value.price | currency : "USD" }}</h1>
+              </div>
+              <div class="letters">
+                <span>Add To Cart</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="food">
+    <div *ngFor="let value of productData" class="salads">
+      <div class="Saladsinfo">
+        <img [src]="value.image" alt="" />
+        <div class="Saladsinfoin">
+          <h1>{{ value.name }}</h1>
+          <h2>{{ value.spiciness }}</h2>
+          <div class="nutsveg">
+            <h2>Nuts</h2>
+            <h2>Vegetarian</h2>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+

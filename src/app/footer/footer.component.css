@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  padding: 65px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 60px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+p {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+  }
+}

@@ -1,0 +1,67 @@
+
+  .food {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+
+  }
+  
+  .products {
+    padding: 60px;
+    display: flex;
+    gap: 35px;
+  }
+  
+  .salads {
+    /* width: 20%; */
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .salads img {
+    width: 100%;
+    border-radius: 25px;
+  }
+  
+  .Saladsinfo {
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+  @media screen and (max-width: 1400px) {
+    .food {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 730px) {
+    .food {
+      grid-template-columns: 1fr;
+    }
+    .products {
+      flex-direction: column;
+    }
+    .filterdiv {
+      width: 100%;
+    }
+  }
+  .Saladsinfoin {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .nutsveg {
+    display: grid;
+    gap: 10px;
+  }
